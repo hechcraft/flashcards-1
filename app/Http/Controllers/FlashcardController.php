@@ -35,4 +35,10 @@ class FlashcardController extends Controller
         $word->delete();
         return redirect('/home');
     }
+
+    public function show(Request $request)
+    {
+        $all = $request->user()->words()->get();
+        return View('flashcards')->with('words', $all);
+    }
 }

@@ -22,3 +22,4 @@ Route::get('/home', 'HomeController@index');
 Route::post('/word/add', 'FlashcardController@add');
 
 Route::delete('/word/delete/{word}', 'FlashcardController@delete');
+Route::get('/flashcards', 'FlashcardController@show');

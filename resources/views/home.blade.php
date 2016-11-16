@@ -61,6 +61,7 @@
             <p>No translations yet.</p>
                 @endif
         </div>
+        <a href="/flashcards"><button type="button" class="btn btn-primary btn-lg btn-block">Go to flashcards</button></a>
     </div>
 </div>
 @endsection
